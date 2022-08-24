@@ -128,7 +128,7 @@ input[type=checkbox]{
   width: 100%;
   height: 90vh;
   z-index: 0;
-  background: -moz-linear-gradient(45deg, #02e1ba 0%, #26c9f2 29%, #d911f2 66%, #ffa079 100%);
+  background: -moz-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
   background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
   background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
   background-size: 400% 400%;
@@ -535,6 +535,7 @@ input[type=checkbox]{
   margin-left: 15%;
   min-height: 75vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/Nidurnettanveg.png") center center no-repeat;
+  background-size: cover;
   border-radius: 25px;
 
 }
@@ -785,6 +786,8 @@ input[type=checkbox]{
 
 .sectionUmOkkur {
   position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .umOkkurTitle {

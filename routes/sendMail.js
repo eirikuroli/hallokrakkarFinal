@@ -25,7 +25,7 @@ router.post('/',function(req,res,next) {
 
     let mailOptions = {
         from: 'hallokrakkartest@yahoo.com',
-        to: 'hallokrakkartest@yahoo.com',
+        to: 'info@hallokrakkar.com',
         subject: subject,
         html: messagefrom
     };
