@@ -265,7 +265,7 @@ input[type=checkbox]{
 
 .sectionTopRight {
   position: absolute;
-  width: 30%;
+  width: 50%;
   float: right;
   top: 50%;
   left: 60%;
@@ -1058,6 +1058,7 @@ input[type=checkbox]{
 }
 
 .person {
+  position: relative;
   flex: 1 0 21%;
   width: 25%;
   text-align: center;
@@ -1067,15 +1068,17 @@ input[type=checkbox]{
 
 
 .person-image {
-  background: #999;
-  background-position: 50% 50%;
-  background-size: cover;
-  /* background: white; */
+  position: relative;
   height: 170px;
   width: 170px;
   border-radius: 50%;
   border: 1px solid black;
   margin: auto;
+}
+
+.person-image:nth-child(1) {
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 1200px) {
