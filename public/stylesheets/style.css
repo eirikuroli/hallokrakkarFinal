@@ -128,9 +128,9 @@ input[type=checkbox]{
   width: 100%;
   height: 90vh;
   z-index: 0;
-  background: -moz-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
-  background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
-  background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+  background: -moz-linear-gradient(45deg, #1ff2f2 0%,#26c9f2 29%,#02cccc 66%,#07f5f5 100%);
+  background: -webkit-linear-gradient(45deg, #1ff2f2 0%,#26c9f2 29%,#02cccc 66%,#07f5f5 100%);
+  background: linear-gradient(45deg, #1ff2f2 0%,#26c9f2 29%,#02cccc 66%,#07f5f5 100%);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
@@ -483,15 +483,19 @@ input[type=checkbox]{
 
 @media only screen and (max-width: 900px) {
   .frontpageWrapper {
+    padding-top: 0;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
   }
 }
 
+
+
 .downloadSection {
   position: relative;
-  margin-top: 10vh;
+  margin-top: 5vh;
   text-align: center;
+  opacity: 0.3;
 }
 
 .appleDownload {
@@ -506,7 +510,33 @@ input[type=checkbox]{
   height: 100px;
 }
 
+.comingSoon {
+  position: relative;
+  margin-top: 15vh;
+  z-index: 4;
+  background: rgba(0,0,0,0.8);
+}
+
+.comingSoonText {
+  padding-top: 30px;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 54px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 900px) {
+
+  .comingSoon {
+    margin-top: initial;
+  }
+
+  .comingSoonText {
+    padding-top: 15px;
+    font-size: 32px;
+  }
+
   .downloadSection {
     position: relative;
     margin-top: 0;
@@ -534,10 +564,9 @@ input[type=checkbox]{
   margin-right: 15%;
   margin-left: 15%;
   min-height: 75vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/Nidurnettanveg.png") center center no-repeat;
   background-size: cover;
   border-radius: 25px;
-
+  background-color: #1ff2f2;
 }
 
 .trailerHeading {
@@ -549,7 +578,7 @@ input[type=checkbox]{
 
 .trailerPlay {
   position: absolute;
-  width: 150px;
+  width: 200px;
   height: 50px;
   background-color: #ff9e0d;
   color: white;
@@ -558,6 +587,12 @@ input[type=checkbox]{
   font-size: 15px;
   bottom: 20%;
   left: 7%;
+}
+
+.trailerVideo {
+  position: relative;
+  min-width: 100%;
+  height: auto;
 }
 
 
@@ -667,7 +702,7 @@ input[type=checkbox]{
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #33383b;
+  background-color:  #26c9f2;
   color: #ffffff;
   font-size: 25px;
   width: 38px;
@@ -749,7 +784,7 @@ input[type=checkbox]{
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color:  #33383b;
+  background-color:  #26c9f2;
   border-radius: 2px;
 
   font-size: 20px;
@@ -921,12 +956,14 @@ input[type=checkbox]{
     position: relative;
     background: white;
     min-width: 90%;
-    height: 100vh;
+    height: 40vh;
     margin-left: 5%;
     margin-right: 5%;
+    padding-bottom: 5vh;
   }
 
   .umOkkurTexti {
+    position: relative;
     margin: 15px;
     line-height: 1.5;
     text-align: justify;
@@ -938,8 +975,17 @@ input[type=checkbox]{
     max-width: 100%;
     position: relative;
     margin: auto;
-    height: 30%;
+    height: 50%;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .umOkkurMyndirOgTexti {
+    position: relative;
+    height: 80vh;
+    padding-bottom: 45vh;
+    margin-top: 10vh;
   }
 }
 
@@ -987,7 +1033,7 @@ input[type=checkbox]{
     margin: auto;
     height: 60%;
     overflow: hidden;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
   }
 
   /* Hide the images by default */
@@ -1109,9 +1155,9 @@ input[type=checkbox]{
 
 .hafaSambandPage {
   height: 90vh;
-  background: -moz-linear-gradient(45deg, #02e1ba 0%, #26c9f2 29%, #d911f2 66%, #ffa079 100%);
-  background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
-  background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+  background: -moz-linear-gradient(45deg, #1ff2f2 0%,#26c9f2 29%,#02cccc 66%,#07f5f5 100%);
+  background: -webkit-linear-gradient(45deg, #1ff2f2 0%,#26c9f2 29%,#02cccc 66%,#07f5f5 100%);
+  background: linear-gradient(45deg, #1ff2f2 0%,#26c9f2 29%,#02cccc 66%,#07f5f5 100%);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
