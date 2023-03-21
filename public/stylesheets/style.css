@@ -855,7 +855,7 @@ input[type=checkbox]{
   max-width: 100%;
   position: relative;
   margin: auto;
-  height: 60%;
+  min-height: 60%;
   overflow: hidden;
 }
 
@@ -948,22 +948,30 @@ input[type=checkbox]{
   text-align: justify;
 }
 
+@media only screen and (max-width: 1200px) {
+  .umOkkurSlideshow {
+    min-height: 40%;
+  }
+}
+
 @media only screen and (max-width: 900px) {
+
   .umOkkurMyndirOgTexti {
     margin-top: 5vh;
     border-radius: 25px 25px 25px 25px;
     border: 1px solid #999;
     position: relative;
     background: white;
+    height: 50%;
     min-width: 90%;
-    height: 100vh;
     margin-left: 5%;
     margin-right: 5%;
-    padding-bottom: 15vh;
+    padding-bottom: 5vh;
   }
 
   .umOkkurTexti {
     position: relative;
+    padding-top: 5vh;
     margin: 15px;
     line-height: 1.5;
     text-align: justify;
